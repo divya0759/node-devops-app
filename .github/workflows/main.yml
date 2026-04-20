@@ -15,6 +15,6 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Build Docker Image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/node-devops-app:v1 .
+        run: docker build -t divya0759/node-devops-app:v1
       - name: Push Docker Image
-        run: docker push ${{ secrets.DOCKER_USERNAME }}.node-devops-app:v1
+        run: docker push divya0759/node-devops-app:v1
